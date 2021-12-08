@@ -13,6 +13,8 @@ body{
     line-height: 24px;
     background-color: #fff;
     color: #1F2937;
+    /* max-width: 1200px; */
+    margin: auto;
 }
 .container{
     width: 100%;
@@ -38,7 +40,7 @@ li{
     margin-top: 40px 0;
 }
 .about-logo{
-    width: 20rem;
+    width: 30rem;
     margin: 50px 0;
 }
 .about-img{
@@ -117,9 +119,26 @@ li{
 }
 
 .leaders{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
+    padding: 12px; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 40px; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    row-gap: 72px;
+    column-gap: 40px;
+    width: 94%;
+    margin: auto;
 }
 
 .leaders-info{
@@ -184,8 +203,6 @@ li{
 .main-box{
     width: 80%;
     margin: auto;
-    text-align: center;
-    font-weight: bold;   
 }
 .cards{
    margin: 10px;
@@ -238,15 +255,15 @@ li{
 
 /* footer */
 
-.footer-left img,.footer-left{
+.footer-left img{
     margin-bottom: 20px;
 }
 
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 44px;
+    margin-bottom: 44px;
 }
 
 .footer-contact{
@@ -266,8 +283,13 @@ li{
     display: flex;
     align-items: center;
 }
+.footer-logo img{
+    width: 14rem;
+}
 
-@media (max-width:320px){
+
+
+@media (max-width:797px){
     .container-small{
         width: 75%;
     }
@@ -278,10 +300,10 @@ li{
         width: 100%;
     }
     .about-logo{
-        width: 15rem;
+        width: 27rem;
     }
     .about-img img{
-        width: 15rem;
+        width: 22rem;
     }
     .work-card{
         margin-bottom: 52px;
@@ -289,8 +311,9 @@ li{
     .work-wrapper{
         display: block;
     }
+   
     .work-content{
-        width: 90%;
+        width:40%
     }
 
     .leaders{
@@ -301,5 +324,39 @@ li{
     }
     .footer-left{
         margin-bottom: 56px;
+    }
+    .footer-logo img{
+        width: 10rem;
+    }
+    .leaders{
+        row-gap: 33px;
+    }
+    .footer-contact{
+        justify-content: space-between;
+        width: 64%;
+    }
+}
+
+
+
+@media (max-width:578px){
+    .about-logo{
+        width: 15rem;
+    }
+    .about-img img{
+        width: 15rem;
+    }
+
+
+@media (max-width:420px){
+        .footer-contact{
+            width: 100%;
+        }  
+    }
+}
+
+@media (max-width:320px){
+    .work-content{
+        width: 90%;
     }
 }
