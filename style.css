@@ -13,17 +13,17 @@ body{
     line-height: 24px;
     background-color: #fff;
     color: #1F2937;
-    /* max-width: 1200px; */
+    max-width: 1350px;
     margin: auto;
 }
 .container{
-    width: 100%;
+    width: 87%;
     margin: auto;
     overflow: hidden;
 }
 
 .container-small{
-    width: 85%;
+    width: 72%;
     margin: auto;
     overflow: hidden;
 }
@@ -112,11 +112,11 @@ li{
     margin: 40px 0;
 }
 
-.leaders-container{
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
+/* .leaders-container{ */
+    /* width: 90%; */
+    /* margin: auto;
+    overflow: hidden; */
+/* } */
 
 .leaders{
     /* display: grid;
@@ -130,14 +130,23 @@ li{
     align-items: center;
     row-gap: 40px;
     column-gap: 40px; */
+    /* flex-direction: row; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    /* align-items: center; */
+    /* row-gap: 72px;
+    column-gap: 40px;
+    width: 94%;
+    margin: auto; */
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* align-items: center; */
-    row-gap: 72px;
-    column-gap: 40px;
-    width: 94%;
+    row-gap: 61px;
+    column-gap: 61px;
+    width: 72%;
     margin: auto;
 }
 
@@ -250,6 +259,13 @@ li{
 }
 .work-content-loc h3{
     margin: 30px 0 10px 0;
+}
+
+.location-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
 
@@ -414,7 +430,7 @@ li{
 
 @media (max-width:389px){
     .about-logo{
-        width: 17rem;
+        width: 16rem;
     }
 }
 
