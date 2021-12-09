@@ -362,6 +362,10 @@ li{
     .work-wrapper{
         display: block;
     }
+
+    .location-wrapper{
+        display: block;
+    }
    
     .work-content{
         width:40%
